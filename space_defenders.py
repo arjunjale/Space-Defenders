@@ -278,7 +278,7 @@ def main(winstyle=0):
     # decorate the game window
     icon = pygame.transform.scale(Sml_Alien.images[0], (32, 32))
     pygame.display.set_icon(icon)
-    pygame.display.set_caption('SPACE DEFENDERS')
+    pygame.display.set_caption('SPACE DEFENDERS  |  Press m for music  |  Press esc to quit')
     pygame.mouse.set_visible(0)
 
     # create the background, tile the bgd image
