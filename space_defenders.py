@@ -290,7 +290,6 @@ def main(winstyle=0):
     if pygame.mixer:
         music = os.path.join(main_dir, 'data', 'house_lo.wav')
         pygame.mixer.music.load(music)
-        # pygame.mixer.music.play(-1)
 
     # Initialize Game Groups
     aliens = pygame.sprite.Group()
@@ -334,6 +333,9 @@ def main(winstyle=0):
                     (event.type == KEYDOWN and event.key == K_ESCAPE):
                 print("Game quit by user")
                 return
+            elif \
+                    (event.type == KEYDOWN and event.key == K_m):
+                pygame.mixer.music.play(-1)
         keystate = pygame.key.get_pressed()
 
         # clear/erase the last drawn sprites
